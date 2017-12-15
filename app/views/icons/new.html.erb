@@ -1,0 +1,25 @@
+
+   <%= form_for @icon, remote: true do |f| %>
+   		<%= csrf_meta_tags %>
+      <%= f.file_field :attachment, class: "icon", style: "position: fixed; top: 0px; left: 0px;" %>
+   <% end %>
+
+   <script>
+   		$("input.icon").on('change', function(e) {
+			
+   			var data = new FormData(jQuery('form')[0]);
+
+			jQuery.ajax({
+			    url: 'new',
+			    data: data,
+			    cache: false,
+			    contentType: false,
+			    processData: false,
+			    type: 'POST',
+			    success: function(data){
+			        parent.postMessage(data, "*");
+			    }
+			});
+
+   		});
+   </script>

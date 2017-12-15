@@ -1,0 +1,10 @@
+development:
+  adapter: async
+
+test:
+  adapter: async
+
+production:
+  adapter: redis
+  url: redis://redistogo:537654669467c7af934d2abaa9cb6aa5@jack.redistogo.com:10242/
+  channel_prefix: notify-server_production

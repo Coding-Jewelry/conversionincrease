@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  captureSource: 1
+  displayUrls: MyString
+  optimizeMode: 1
+  message: MyString
+
+two:
+  name: MyString
+  captureSource: 1
+  displayUrls: MyString
+  optimizeMode: 1
+  message: MyString
